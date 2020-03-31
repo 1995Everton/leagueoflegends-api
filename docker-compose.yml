@@ -1,0 +1,44 @@
+version: '3.3'
+
+services:
+    api:
+        container_name: leagueoflegends-api
+        build: .
+        volumes: 
+            - .:/usr/app
+        ports:
+            - "3000:3000"
+        tty: true
+        depends_on: 
+            -  postgres
+        networks:
+            - postgres-compose-network
+
+    postgres:
+        container_name: postgres
+        image: postgres
+        environment:
+            POSTGRES_PASSWORD: "password"
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./data/leagueoflegends.sql:/docker-entrypoint-initdb.d/leagueoflegends.sql
+        networks:
+            - postgres-compose-network
+
+    pgadmin:
+        container_name: pgadmin
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "everton_cardoso@live.com"
+            PGADMIN_DEFAULT_PASSWORD: "password"
+        ports:
+            - "80:80"
+        depends_on:
+            - postgres
+        networks:
+        - postgres-compose-network
+
+networks: 
+    postgres-compose-network:
+        driver: bridge
