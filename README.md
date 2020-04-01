@@ -1,22 +1,24 @@
-<h1 align="center">Welcome to dump-api 👋</h1>
+<h1 align="center">Welcome to league-of-legends-api-v1 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/1995Everton/dump-api#readme" target="_blank">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/1995Everton/leagueoflegends-api#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/1995Everton/dump-api/graphs/commit-activity" target="_blank">
+  <a href="https://github.com/1995Everton/leagueoflegends-api/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/1995Everton/dump-api/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/1995Everton/leagueoflegends-api/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
   </a>
 </p>
 
-> create database automatically with third party data
+> unofficial league of legends api, there you have access to character data, such as abilities, skins, attributes and items
 
 ### 🏠 [Homepage](https://github.com/1995Everton/dump-api.git#readme)
 
-### ✨ [Demo Dump](https://raw.githubusercontent.com/1995Everton/dump-api/master/dump-exemple/leagueoflegends.sql)
+### ✨ [Demo](https://league-of-legends-api-v1.herokuapp.com/api/champion?s={%22locale%22:%22pt_BR%22})
+
+### 📑 [Documentation Demo](https://league-of-legends-api-v1.herokuapp.com/api/)
 
 ## Requirements
 
@@ -28,53 +30,41 @@
 docker-compose up --build
 ```
 
-## ✨ [Api](http://localhost:3000)
+## 🚀 [Api](http://localhost:3000)
 
-### 🚀 Routes
+  - localhost: http://localhost:3000
 
-  - BaseUrl: http://localhost:3000
+## 🐘 pgAdmin
 
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="5">GET /leagueoflegends</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="5">create the hearthstone database</td>
-  </tr>
-  <tr>
-    <th class="tg-0pky" colspan="5">GET /hearthstone</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="5">create the leagueoflegends database</td>
-  </tr>
-</table>
-
-## 👍 PhpMyAdmin
-
-  👉 [Link](http://localhost/)
+  👉 [localhost](http://localhost/)
   
- - Server: db
- - User: root
+ - Login: email@email.com
  - Password: password
 
-## 📌 References
+### 💻 Server
 
-  The following are the references from which the api can search for information
+  - Host: postgres
+  - Port: 5432
+  - Database: leagueoflegends
+  - Username: postgres
+  - Password: password
 
-#### 🙏 [Hearthstone](https://hearthstoneapi.com/)
-  
-#### 🙏 [League of Legends](https://riot-api-libraries.readthedocs.io/en/latest/ddragon.html)
+### 🗒️ Note
+
+  >the modeling of the bank was done through another api, please feel free to use it.
+
+  - [dump-api](https://github.com/1995Everton/dump-api#readme)
 
 ## Author
 
 👤 **1995Everton**
 
 * Github: [@1995Everton](https://github.com/1995Everton)
-* LinkedIn: [@https:\/\/www.linkedin.com\/in\/everton-cardoso-a33556173\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/everton-cardoso-a33556173\/)
+* LinkedIn: [@Everton-Cardoso](https://www.linkedin.com/in/everton-cardoso-a33556173/)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/1995Everton/dump-api/issues). You can also take a look at the [contributing guide](https://github.com/1995Everton/dump-api/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/1995Everton/leagueoflegends-api/issues). You can also take a look at the [contributing guide](https://github.com/1995Evertonleagueoflegends-api/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -83,7 +73,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2020 [1995Everton](https://github.com/1995Everton).<br />
-This project is [MIT](https://github.com/1995Everton/dump-api/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/1995Everton/leagueoflegends-api/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
